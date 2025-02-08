@@ -42,6 +42,6 @@ EpicShelf is an e-commerce platform designed for book lovers. Users can explore 
 ### 7. Profile Page
 - Allows users to:
   - Update personal information
-  - View order history
+  
 
 ---
