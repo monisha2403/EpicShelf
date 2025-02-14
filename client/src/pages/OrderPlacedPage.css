@@ -1,0 +1,26 @@
+.order-placed-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-placed-page h1 {
+    margin-bottom: 20px;
+}
+
+.order-placed-page p {
+    margin-bottom: 10px;
+}
+
+.order-placed-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-placed-page li {
+    margin-bottom: 5px;
+}

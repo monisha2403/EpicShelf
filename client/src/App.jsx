@@ -4,19 +4,27 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import SearchPage from "./pages/SearchPage";
 import ProfilePage from "./pages/ProfilePage";
 import BookDetailsPage from "./pages/BookDetailsPage";
+import BooksPage from "./pages/BooksPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
+import Wishlist from "./pages/Wishlist";
+import OrderPlacedPage from "./pages/OrderPlacedPage";
+import CategoriesPage from "./pages/CategoriesPage";
 
 function App() {
   const [activePageIndex, setActivePageIndex] = useState(0);
 
   const NAVBAR_ITEMS = [
-    { icon: "🏠", text: "Home", component: <HomePage /> },
-    { icon: "ℹ️", text: "About", component: <AboutPage /> },
-    { icon: "🔍", text: "Search", component: <SearchPage /> },
-    { icon: "👤", text: "Profile", component: <ProfilePage /> },
-    { icon: "📖", text: "Book", component: <BookDetailsPage /> }, // Added BookDetailsPage
+    { icon: "🏠", text: "Home", path: "/" },
+    { icon: "ℹ️", text: "About", path: "/about" },
+    { icon: "👤", text: "Profile", path: "/profile" },
+    { icon: "📚", text: "Books", path: "/books" },
+    { icon: "🛒", text: "Cart", path: "/cart" },
+    { icon: "❤️", text: "Wishlist", path: "/wishlist" },
   ];
 
   return (
@@ -27,10 +35,16 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/search" element={<SearchPage />} />
             <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/book" element={<BookDetailsPage />} /> {/* Updated path */}
+            <Route path="/books" element={<BooksPage />} />
             <Route path="/book/:id" element={<BookDetailsPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/order-placed" element={<OrderPlacedPage />} />
+            <Route path="/categories/:category" element={<CategoriesPage />} />
           </Routes>
         </div>
       </div>

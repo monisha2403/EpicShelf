@@ -1,13 +1,15 @@
-.book-details-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.wishlist-page {
     padding: 20px;
 }
 
-.book-card {
-    width: 300px;
+.wishlist-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wishlist-item {
+    width: 200px;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
@@ -16,17 +18,17 @@
     padding: 10px;
 }
 
-.book-card img {
+.wishlist-item img {
     width: 100%;
     height: auto;
 }
 
-.book-card h3 {
+.wishlist-item h3 {
     font-size: 1.2em;
     margin: 10px 0;
 }
 
-.book-card p {
+.wishlist-item p {
     font-size: 1em;
     color: #555;
     margin-bottom: 10px;
